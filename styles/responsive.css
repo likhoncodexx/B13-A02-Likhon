@@ -2,7 +2,7 @@
 @media screen and (max-width: 576px) {
 
   .nav-container {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .nav-logo {
@@ -37,9 +37,12 @@
     width: 100%;
     
 }
+/* .hero-container{
+  padding: 0 200px;
+} */
   .hero-container {
     min-height: 100vh;
-    padding: 90px 15px;
+    padding: 0 20px;
     text-align: center;
   }
 
@@ -89,11 +92,12 @@
 
   /* About section  */
 @media screen and (max-width: 576px) {
-
-
+.about-container{
+  padding: 0 20px;
+}
   .about-container {
 text-align: center;
-width: 380px;
+width: 100%;
 height: 700px;
 align-items: center;
 gap: 40;
@@ -142,5 +146,54 @@ gap:70px 20px;
   .card p {
     font-size: 16px;
     margin-bottom: 12px;
+  }
+}
+
+                    /* tech-wave  */
+@media (max-width: 576px) {
+
+  .tech-wave-container {
+    padding: 0 20px;
+  }
+
+  .tech-wave-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .tech-wave-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 16px;
+  }
+
+  .tech-wave-card {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .tech-wave-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+  }
+
+  .tech-wave-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .tech-wave-card p {
+font-size: 16px;
+font-weight: 400;
+  }
+
+  .headphone,
+  .mobile,
+  .loacation,
+  .exclusive {
+    grid-column: auto;
+    grid-row: auto;
   }
 }
