@@ -197,3 +197,44 @@ font-weight: 400;
     grid-row: auto;
   }
 }
+
+                        /* Featured section */
+@media screen and (max-width: 576px) {
+
+  .featured-container {
+    padding: 0 20px; 
+  }
+
+  .featured-title h2 {
+    font-size: 32px;
+    font-weight: 700;  
+    padding-top: 60px;    
+    margin-bottom: 24px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr; 
+    gap: 24px;
+  }
+
+  .featured-card {
+    padding: 12px;        
+  }
+
+  
+  .video-box iframe {
+    width: 100%;       
+    height: auto;          
+    border-radius: 12px 12px 0 0;
+  }
+
+  .featured-card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .featured-card p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
