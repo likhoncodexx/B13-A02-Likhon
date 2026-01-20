@@ -282,4 +282,42 @@ font-weight: 400;
         justify-content: center;
         margin-top: 24px;
     }
-}         
+}
+              /* footer                 */
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 40px 0;
+
+    }
+
+    .footer-container {
+        padding: 0 20px;
+    }
+
+    .footer-logo {
+        margin-bottom: 24px;
+    }
+
+    .footer-logo img {
+        width: 219px;
+         height: 32px;
+    }
+
+    .footer-social {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 38px;
+      ;
+    }
+
+    .footer-image {
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-text {
+font-size: 16px;
+font-weight: 400;
+    }
+}
