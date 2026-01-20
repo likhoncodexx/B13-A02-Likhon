@@ -466,6 +466,7 @@ footer {
 } 
 .footer-logo{
   margin-bottom: 32px;
+  padding: auto;
 }
 .footer-logo img{
 width: 410px;
