@@ -57,6 +57,19 @@
     height: 100px;
   }
 
+.badge {
+    width: 70px;
+    height: 35px;
+     font-size: 16px;
+     padding: 0;
+     top: 1px;
+     right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px rgba(11, 229, 138, 0.5);
+    }
+
   .hero-title {
     font-size: 36px;
     line-height: 44px;
@@ -285,10 +298,7 @@ font-weight: 400;
 }
               /* footer                 */
 @media screen and (max-width: 576px) {
-    /* .footer {
-        padding: 40px 0;
 
-    } */
 .footer {
         padding: 57px 22px;
         background-image: url("../images/mfooter.png");
@@ -326,7 +336,7 @@ font-weight: 400;
     }
 
     .footer-text {
-font-size: 15px;
+font-size: 12px;
 font-weight: 400;
     }
 

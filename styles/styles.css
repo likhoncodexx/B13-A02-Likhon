@@ -74,7 +74,6 @@ body {
                        /* Hero section */
 .hero{
   width: 100%;
-  /* min-height: 100vh; */
   background-image: url("../images/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;     
@@ -130,6 +129,30 @@ width: 180px;
 height:65%;
 align-items: center;
 
+}
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    background-color: #0BE58A;
+    color: #000000;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 6000;
+    width: 75px;
+    height: 38px;
+    box-shadow: 0 0 15px rgba(11, 229, 138, 0.6);
+    z-index: 10;
+    transition: 0.3s ease;
+}
+.badge:hover{
+    background-color: transparent;
+    color: #0BE58A;
+    border: 2px solid #0BE58A;
+    box-shadow: 0 0 30px rgba(11, 229, 138, 1);
+    transform: scale(1.1);
+    
 }
 
 .hero-title{
