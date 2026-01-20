@@ -102,6 +102,21 @@ body {
   margin-bottom: 40px;
 
 }
+
+.hero-mic:hover {
+  animation: micShake 0.3s ease-in-out 10;
+}
+
+@keyframes micShake {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-6px); }
+  40%  { transform: translateX(6px); }
+  60%  { transform: translateX(-6px); }
+  80%  { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+
 .hero-mic img{
 width: 180px;
 height:65%;
@@ -117,10 +132,12 @@ align-items: center;
 margin-bottom: 8px;
 }
 .hero-desc{
-  font-size: 16px;
+font-size: 16px;
 font-weight: 400;
 line-height: 19px;
 margin-bottom: 24px;
+opacity: 0.6;
+
 }
            /* button */
 
@@ -128,6 +145,7 @@ margin-bottom: 24px;
   display: flex;
   gap: 16px;
 }
+
 .btn-left, .btn-right{
 display: flex;
 align-items: center;
@@ -143,12 +161,26 @@ cursor: pointer;
 }
 .btn-left{
   background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
-  border: none;
+
+  transition:.2s ease;
 }
 .btn-right{
   background: transparent;
 border: 1px solid #0BE58A;
+transition:.2s ease-in
 }
+                /* hover  */
+.btn-left:hover {
+  border-color: #eff2d9;        
+  transform: translateY(-10px); 
+}
+
+ .btn-right:hover {
+  border-color: #eff2d9;        
+  transform: translateY(-10px); 
+}
+
+
 
 .btn-left .btn-right{
 width: 20px;
@@ -178,7 +210,6 @@ padding-bottom: 120px;
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 16px;
-  /* line-height: 58px; */
 }
 .about-description{
 font-size: 18px;
@@ -188,6 +219,8 @@ letter-spacing: 0%;
 text-align: center;
 padding: 0 220px;
 margin-bottom: 80px;
+opacity: 0.6;
+
 }
 .hr-line{
 border: 1px solid var(--#FFFFFF, rgba(255, 255, 255, 1));
@@ -205,7 +238,11 @@ text-align: center;
 margin-top: 80px;
 margin-bottom: 16px;
 }
-                      /* why TechWave  */
+.card p{
+  opacity: 0.6;
+
+}
+                      /*  TechWave  */
   .tech-wave{
     background-color: #230E3D;
   }
@@ -254,6 +291,8 @@ margin-bottom: 16px;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
+opacity: 0.6;
+
 }
                       /* span */
 .headphone{
@@ -312,6 +351,8 @@ font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 margin-bottom: 12px;
+opacity: 0.6;
+
 }
 
 .time-container {
@@ -369,6 +410,7 @@ font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 margin-bottom: 16px;
+opacity: 0.6;
 }
 
 .social-icon {
@@ -435,6 +477,13 @@ height: 60px;
   gap: 40px;
   margin-bottom: 56px;
 } 
+
+.footer-social span{
+opacity: 0.8;   
+font-size: 16px;
+font-weight: 400;
+opacity: 0.6
+}
 .footer-image{
   display: flex;
   align-items: center;
@@ -448,4 +497,6 @@ height: 24px;
   opacity: 0.8;   
 font-size: 16px;
 font-weight: 400;
+opacity: 0.6;
+
 }
